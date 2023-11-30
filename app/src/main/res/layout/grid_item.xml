@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="15dp">
+
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="175dp"
+        android:layout_height="190dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#393434"
+            android:padding="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardgambarProduk"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                app:cardCornerRadius="7.5dp">
+
+                <ImageView
+                    android:id="@+id/image_prd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fried_chicken" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nama_prd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CardgambarProduk"
+                android:padding="8dp"
+                android:text="Nama Produk"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_pesan"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Pesan"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                app:cornerRadius="7.5dp"
+                android:backgroundTint="#FF5722"
+                android:layout_below="@+id/nama_prd"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

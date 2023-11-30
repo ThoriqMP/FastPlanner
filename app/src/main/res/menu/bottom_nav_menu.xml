@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_kalkulator"
+        android:icon="@drawable/baseline_calculate_24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Kalkulator" />
+    <item
+        android:icon="@drawable/baseline_food_bank_24"
+        android:id="@+id/nav_makanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Makanan" />
+</menu>

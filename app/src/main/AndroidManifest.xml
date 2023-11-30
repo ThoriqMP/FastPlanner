@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_fastapp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_fastapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AnalyzeNutrisi"
+        tools:targetApi="31">
+        <activity
+            android:name=".BeliPlan"
+            android:exported="false" />
+        <activity
+            android:name=".FormDataDiri"
+            android:exported="false" />
+        <activity
+            android:name=".FormAkun"
+            android:exported="false" />
+        <activity
+            android:name=".PesananActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".TimerService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".finish_14"
+            android:exported="false" />
+        <activity
+            android:name=".schedule_start14"
+            android:exported="false" />
+        <activity
+            android:name=".schedule_page_14"
+            android:exported="false" />
+        <activity
+            android:name=".schedule_page"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KeranjangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PuasaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KalkulatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

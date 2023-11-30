@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF8F00"
+            app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:id="@+id/buttonKembali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:src="@drawable/back_arrow" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="75dp"
+            android:fontFamily="@font/o_bold"
+            android:text="Keranjang"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_gravity="start"
+        android:fontFamily="@font/o_bold"
+        android:text="Informasi produk"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/judul">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp">
+
+        <ImageView
+                android:id="@+id/imageViewGambarProduk"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintTop_toBottomOf="@id/linearLayout"
+                android:src="@drawable/bubur" />
+    </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/pesanTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewGambarProduk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:fontFamily="@font/o_bold"
+            app:layout_constraintTop_toBottomOf="@id/imageViewGambarProduk"
+            android:text="nama produk"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/textViewNamaProduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewGambarProduk"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/o_bold"
+            app:layout_constraintTop_toBottomOf="@id/imageViewGambarProduk"
+            android:text="nama produk"
+            android:textSize="18sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/ganti_pesanan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ubah Pesanan"
+                android:backgroundTint="#F9A825"
+                app:cornerRadius="15dp"
+                android:padding="15dp"/>
+            <Button
+                android:id="@+id/konfirmasi_pesanan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi"
+                android:backgroundTint="#4AB14A"
+                android:layout_marginStart="5dp"
+                app:cornerRadius="15dp"
+                android:padding="15dp"/>
+            <Button
+                android:id="@+id/selesaikan_pesanan"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi"
+                android:visibility="gone"
+                android:backgroundTint="#DA0A0A"
+                android:layout_marginStart="5dp"
+                app:cornerRadius="15dp"
+                android:padding="15dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

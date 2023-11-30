@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/goto_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="160dp"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="#222020"
+        android:layout_marginTop="88dp"
+        android:padding="2dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="3dp">
+        <RelativeLayout
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image_prd"
+                android:layout_width="155dp"
+                android:layout_height="88dp"
+                android:src="@drawable/fried_chicken"
+                app:cornerRadius="20dp" />
+            <TextView
+                android:id="@+id/nama_prd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="9dp"
+                android:paddingTop="37dp"
+                android:text="Vita Sampi"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/desc_prd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="9dp"
+                android:paddingTop="55dp"
+                android:text="Pupuk organik dari ikan tuna"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
